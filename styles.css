@@ -1,7 +1,40 @@
 body {
   background-color: rgba(57, 79, 244, 0.9);
+  margin-top: 150px;
 }
 
 .friends {
   text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+nav {
+  background-color: red;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+}
+nav ul {
+
+  /* z-index: 10; */
+  /* made them go horizontal  */
+  display: flex;
+  /* centered list items on the vertical axis  */
+  /* align-items: center; */
+  /* margin-right: 50px; */
+}
+
+li {
+  margin-right: 20px;
+  font-size: 25px;
 }
