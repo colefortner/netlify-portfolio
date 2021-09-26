@@ -1,6 +1,12 @@
 body {
-  background-color: rgba(57, 79, 244, 0.9);
+  /* background-color: rgba(57, 79, 244, 0.9); */
+  /* background-color: #55003B ;
+  #FFE1C8
+  #150A41 */
   margin-top: 150px;
+  background-color: #82aae6;
+  color: #140a41;
+  font-family: 'Raleway', sans-serif;
 }
 
 .friends {
@@ -13,9 +19,11 @@ ul {
 
 a {
   text-decoration: none;
+  color: white;
+  font-family: 'Raleway', sans-serif;
 }
 nav {
-  background-color: red;
+  background-color: #140a41;
   position: fixed;
   top: 0;
   right: 0;
@@ -30,11 +38,17 @@ nav ul {
   /* made them go horizontal  */
   display: flex;
   /* centered list items on the vertical axis  */
-  /* align-items: center; */
   /* margin-right: 50px; */
 }
 
 li {
+  align-items: center;
+  margin-top: 10px;
   margin-right: 20px;
   font-size: 25px;
+}
+
+i {
+  color: white;
+  font-size: 30px;
 }
