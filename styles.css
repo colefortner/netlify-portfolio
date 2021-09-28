@@ -69,3 +69,7 @@ i {
   margin-right: 50px;
   text-align: center;
 }
+
+input::placeholder {
+  color: hsl(300deg 100% 50%);
+}
