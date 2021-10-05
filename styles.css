@@ -69,9 +69,22 @@ section {
   font-size: 2em;
 }
 
-i {
+.project-icons {
   color: white;
-  /* font-size: 30px; */
+  font-size: 1.8em;
+  margin-top: 100px;
+  margin: 15px;
+  margin-left: 0;
+}
+
+i {
+  margin-right: 15px;
+}
+
+#df-homepage {
+  height: 60%;
+  width: 60%;
+  border-radius: 2%;
 }
 
 input::placeholder {
