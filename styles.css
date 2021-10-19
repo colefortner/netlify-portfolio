@@ -4,13 +4,16 @@ body {
   #FFE1C8
   #150A41 */
   margin-top: 150px;
-  background-color: #82aae6;
+  /* background-color: #82aae6; */
+  /* background-color: peachpuff; */
+  /* background-color: #38737799; */
+  background-color: hsl(202.9, 15%, 55.7%);
   color: #140a41;
   font-family: "Raleway", sans-serif;
 }
 
 nav {
-  background-color: #140a41;
+  background-color: hsla(252, 74%, 15%, 0.815);
   position: fixed;
   top: 0;
   right: 0;
@@ -27,7 +30,9 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: hsl(0, 16%, 77%);
+  /* color: hsl(0, 16%, 77%); */
+  color: rgb(238, 232, 227);
+
   font-family: "Raleway", sans-serif;
 }
 
@@ -45,20 +50,53 @@ ul .nav-github {
 section {
   width: 66%;
   margin: 0 auto;
+  padding-top: 75px;
 }
 
+h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2em;
+  /* font-weight: bold; */
+}
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  border-radius: 100%;
+}
+
+.about-photo {
+  width: 30%;
+  min-width: 300px;
+}
+
+.about-description {
+  width: 60%;
+  min-width: 300px;
+}
+
+.about p {
+  font-size: 1.2em;
+  font-weight: bold;
+}
 .skills-container {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  width: 80%;
+  margin-top: 70px;
+  width: 100;
   text-align: center;
-  font-size: 2em;
 }
 
 .skill-container {
   height: 150px;
-  width: 200px;
+  width: 150px;
   margin-right: 15px;
   text-align: center;
 }
@@ -68,13 +106,17 @@ section {
 }
 
 .skill-container i {
-  color: hsl(0, 18%, 80%);
-  font-size: 2em;
+  /* color: hsl(0, 18%, 80%); */
+  color: rgb(238, 232, 227);
+
+  font-size: 4.5em;
 }
 
 .project-icons {
-  color: hsl(0, 18%, 80%);
-  font-size: 1.8em;
+  /* color: hsl(0, 18%, 80%); */
+  color: rgb(238, 232, 227);
+
+  font-size: 2em;
   margin-top: 100px;
   margin: 15px;
   margin-left: 0;
@@ -90,16 +132,33 @@ i {
   border-radius: 2%;
 }
 
+h4 {
+  font-size: 1.6em;
+}
+
+.project-description {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.project-meta {
+  font-weight: 1.4em;
+  font-weight: bold;
+}
+
 .repo-button {
   /* background-color: bisque; */
   /* background-color: blanchedalmond; */
-  background-color: indianred;
+  /* background-color: indianred; */
+  background-color: hsla(252, 74%, 15%, 0.815);
+  background-color: ;
   font-size: 1.5em;
   padding: 10px;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 5px;
-  color: black;
+  /* color: black; */
+  color: rgb(238, 232, 227);
 }
 
 .deployed-button {
@@ -112,6 +171,27 @@ i {
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 5px;
   color: black;
+}
+
+.journey-div {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.contact {
+  text-align: center;
+}
+
+.connect-icons {
+  font-size: 2.5em;
+  margin-bottom: 2.5em;
+}
+.courses {
+  margin-left: 50px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 input::placeholder {
