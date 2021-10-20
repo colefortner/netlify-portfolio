@@ -1,3 +1,9 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
 body {
   /* background-color: rgba(57, 79, 244, 0.9); */
   /* background-color: #55003B ;
@@ -7,7 +13,8 @@ body {
   /* background-color: #82aae6; */
   /* background-color: peachpuff; */
   /* background-color: #38737799; */
-  background-color: hsl(202.9, 15%, 55.7%);
+  /* background-color: hsl(202.9, 15%, 55.7%); */
+  background-color: #d8d9e8;
   color: #140a41;
   font-family: "Raleway", sans-serif;
 }
@@ -26,6 +33,7 @@ nav {
 nav ul {
   display: flex;
   list-style-type: none;
+  margin-right: 3px;
 }
 
 nav a {
@@ -102,19 +110,21 @@ img {
 }
 
 .skill-container p {
-  margin: 10px;
+  /* margin: 10px; */
+  text-align: center;
 }
 
 .skill-container i {
   /* color: hsl(0, 18%, 80%); */
   color: rgb(238, 232, 227);
-
+  color: hsla(249, 11%, 13%, 0.815);
   font-size: 4.5em;
 }
 
 .project-icons {
   /* color: hsl(0, 18%, 80%); */
-  color: rgb(238, 232, 227);
+  /* color: rgb(238, 232, 227); */
+  color: hsla(249, 11%, 13%, 0.815);
 
   font-size: 2em;
   margin-top: 100px;
@@ -151,7 +161,6 @@ h4 {
   /* background-color: blanchedalmond; */
   /* background-color: indianred; */
   background-color: hsla(252, 74%, 15%, 0.815);
-  background-color: ;
   font-size: 1.5em;
   padding: 10px;
   text-decoration: none;
