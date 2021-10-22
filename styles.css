@@ -16,11 +16,13 @@ body {
   /* background-color: hsl(202.9, 15%, 55.7%); */
   background-color: #d8d9e8;
   color: #140a41;
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  font-family: "Roboto", sans-serif;
 }
 
 nav {
   background-color: hsla(252, 74%, 15%, 0.815);
+  /* hsla(309.5, 63.3%, 55.1%, 0.57); */
   position: fixed;
   top: 0;
   right: 0;
@@ -41,7 +43,8 @@ nav a {
   /* color: hsl(0, 16%, 77%); */
   color: rgb(238, 232, 227);
 
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  font-family: "Roboto", sans-serif;
 }
 
 nav li {
