@@ -9,7 +9,7 @@ body {
   /* background-color: #55003B ;
   #FFE1C8
   #150A41 */
-  margin-top: 150px;
+  /* margin-top: 150px; */
   /* background-color: #82aae6; */
   /* background-color: peachpuff; */
   /* background-color: #38737799; */
@@ -43,8 +43,7 @@ nav a {
   /* color: hsl(0, 16%, 77%); */
   color: rgb(238, 232, 227);
 
-  /* font-family: "Raleway", sans-serif; */
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 nav li {
@@ -62,6 +61,7 @@ section {
   width: 66%;
   margin: 0 auto;
   padding-top: 75px;
+  min-width: 320px;
 }
 
 h2 {
@@ -101,7 +101,7 @@ img {
   flex-wrap: wrap;
   margin: 0 auto;
   margin-top: 70px;
-  width: 100;
+  min-width: 350px;
   text-align: center;
 }
 
@@ -136,7 +136,7 @@ img {
 }
 
 i {
-  margin-right: 15px;
+  /* margin-right: 15px; */
 }
 
 #df-homepage {
@@ -195,6 +195,7 @@ h4 {
 }
 
 .contact {
+  width: 100%;
   text-align: center;
 }
 
