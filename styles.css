@@ -195,7 +195,7 @@ h3 {
   flex-wrap: wrap;
 }
 
-img {
+/* img {
   border-radius: 100%;
 }
 
@@ -207,7 +207,7 @@ img {
 .about-description {
   width: 60%;
   min-width: 300px;
-}
+} */
 
 .about p {
   font-size: 1.2em;
