@@ -293,6 +293,7 @@ p {
   font-size: 1.2em;
   font-weight: bold;
 }
+
 .skills-container {
   display: flex;
   flex-wrap: wrap;
@@ -321,26 +322,15 @@ p {
   font-size: 2.5em;
 }
 
-.project-icons {
-  /* color: hsla(249, 11%, 13%, 0.815); */
-  /* font-size: 5em; */
-  /* margin-top: 100px; */
-  /* margin: 0px;
-  margin-left: 0; */
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-}
-
 i {
   /* margin-right: 15px; */
 }
 
-#df-homepage {
+/* #df-homepage {
   height: 75%;
   width: 75%;
   border-radius: 2%;
-}
+} */
 
 h4 {
   font-size: 1.6em;
@@ -355,7 +345,36 @@ h4 {
   font-weight: 1.4em;
   font-weight: bold;
 }
+.project-images-container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.project-image-container {
+  /* width: 300px; */
+  /* height: 300px; */
+  margin-left: 20px;
+}
+
+.project-images {
+  height: 400px;
+  /* width: 10%; */
+
+  border-radius: 10px;
+  /* this keeps the picture from being distorted */
+  object-fit: cover;
+}
+.project-icons {
+  /* color: hsla(249, 11%, 13%, 0.815); */
+  /* font-size: 5em; */
+  /* margin-top: 100px; */
+  /* margin: 0px;
+  margin-left: 0; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
 .repo-button {
   /* background-color: hsla(252, 74%, 15%, 0.815); */
   background-color: var(--background);
@@ -365,6 +384,7 @@ h4 {
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 5px;
   color: rgb(238, 232, 227);
+  margin-left: 20px;
 }
 
 .deployed-button {
