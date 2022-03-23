@@ -299,7 +299,7 @@ h4 {
 }
 
 .project-images {
-  height: 380px;
+  height: 300px;
   width: 320px;
   border-radius: 10px;
   /* this keeps the picture from being distorted */
