@@ -11,181 +11,58 @@
 
 body {
   background-color: #e7e7e7;
-  /* color: #140a41; */
   color: black;
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
 
-header {
-  background-color: var(--background);
-  text-align: center;
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-}
-
-/* changed this from the tutorial video to
-   allow it to gain focus, making it tabbable */
-.nav-toggle {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
-}
-
-.nav-toggle:focus ~ .nav-toggle-label {
-  outline: 3px solid rgba(lightblue, 0.75);
-}
-
-.nav-toggle-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 1em;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  display: block;
-  background: #e7e7e7;
-  height: 2px;
-  width: 2em;
-  border-radius: 2px;
-  position: relative;
-}
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  content: "";
-  position: absolute;
-}
-
-.nav-toggle-label span::before {
-  bottom: 7px;
-}
-
-.nav-toggle-label span::after {
-  top: 7px;
-}
-
-nav {
-  position: absolute;
-  text-align: left;
-  top: 100%;
-  left: 0;
-  background-color: var(--background);
-  width: 100%;
-  transform: scale(1, 0);
-  transform-origin: top;
-  transition: transform 400ms ease-in-out;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  margin-bottom: 1em;
-  margin-left: 1em;
-}
-
-nav a {
-  color: #e7e7e7;
-  text-decoration: none;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  opacity: 0;
-  transition: opacity 150ms ease-in-out;
-}
-
-nav a:hover {
-  color: #c8a8a8;
-}
-
-.logo {
-  color: #e7e7e7;
-}
-
-.nav-toggle:checked ~ nav {
-  transform: scale(1, 1);
-}
-
-.nav-toggle:checked ~ nav a {
-  opacity: 1;
-  transition: opacity 250ms ease-in-out 250ms;
-}
-
-@media screen and (min-width: 800px) {
-  .nav-toggle-label {
-    display: none;
-  }
-
-  header {
-    display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-  }
-
-  nav {
-    position: relative;
-    text-align: left;
-    transition: none;
-    transform: scale(1, 1);
-    background: none;
-    top: initial;
-    left: initial;
-    grid-column: 3 / 4;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  nav ul {
-    display: flex;
-  }
-
-  nav li {
-    margin-left: 3em;
-    margin-bottom: 0;
-  }
-
-  nav a {
-    opacity: 1;
-    position: relative;
-  }
-
-  nav a::after {
-    content: "";
-    display: block;
-    height: 5px;
-    background: #c8a8a8;
-    position: absolute;
-    top: 1.5em;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms;
-  }
-
-  nav a:hover::after {
-    transform: scale(1, 1);
-  }
-}
-
 section {
+  width: 100%;
   margin: 0 auto;
   min-width: 320px;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
-h1 {
-  font-size: ;
+.section-container {
+  display: flex;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.mobile {
+  display: none;
+}
+@media (max-width: 800px) {
+  .section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  h1 {
+    display: none;
+  }
+  .mobile {
+    display: inline-block;
+  }
+
+  img {
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+}
+
+.name {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.name h1 {
+  font-size: 60px;
+  margin: 0px;
+}
+
+.skills-section-container {
+  margin-right: 10vw;
+  margin-left: 10vw;
 }
 
 h2 {
@@ -193,8 +70,9 @@ h2 {
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 50px;
+  margin-top: 25px;
   margin-bottom: 25px;
+  padding-top: 25px;
 }
 
 h3 {
@@ -207,11 +85,9 @@ p {
   color: var(--background);
 }
 
-.about-container {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 850px;
-  min-width: 320px;
+.even {
+  background-color: hsla(254, 19%, 14%, 0.815);
+  color: rgb(238, 232, 227);
 }
 
 .about-photo {
@@ -219,11 +95,7 @@ p {
 }
 
 .name {
-  width: 100%;
-  display: inline-flex;
-  flex-wrap: wrap;
-  margin-left: 50px;
-  margin-top: 150px;
+  display: flex;
 }
 
 .name img {
@@ -231,25 +103,7 @@ p {
   width: 200px;
   object-fit: cover;
   border-radius: 100%;
-}
-
-.name h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  min-width: 400px;
-}
-
-.name p {
-  color: black;
-  font-size: 2rem;
-  margin-top: 0px;
-}
-
-.about p {
-  font-size: 1.2em;
-  font-weight: bold;
+  margin-top: 15px;
 }
 
 .skills-container {
@@ -269,11 +123,11 @@ p {
 
 .skill-container p {
   text-align: center;
+  color: rgb(238, 232, 227);
 }
 
 .skill-container i {
-  /* color: rgb(238, 232, 227); */
-  color: hsla(249, 11%, 13%, 0.815);
+  color: rgb(238, 232, 227);
   /* changes size of icons and labels */
   font-size: 2em;
 }
@@ -316,7 +170,6 @@ h4 {
   font-size: 1.5rem;
 }
 .repo-button {
-  /* background-color: hsla(252, 74%, 15%, 0.815); */
   background-color: var(--background);
   font-size: 1.5em;
   padding: 10px;
@@ -342,18 +195,27 @@ h4 {
 }
 
 .email {
+  color: hsla(254, 19%, 14%, 0.815);
+
   text-align: center;
   font-size: 1.6em;
   margin-bottom: 20px;
 }
 
+#contact a {
+  color: hsla(254, 19%, 14%, 0.815);
+}
 .contact {
+  color: hsla(254, 19%, 14%, 0.815);
   margin-left: 0;
   min-width: 410px;
   text-align: center;
+  margin-top: 60px;
 }
 
 .connect-icons {
+  color: hsla(254, 19%, 14%, 0.815);
+
   font-size: 2.5em;
   margin-bottom: 2.5em;
 }
@@ -371,4 +233,13 @@ a {
 
 input::placeholder {
   color: hsl(300, 79%, 33%);
+}
+
+.carousel-item .carousel-caption {
+  position: static;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: black;
+  font-size: 30px;
 }
