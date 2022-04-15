@@ -31,7 +31,15 @@ section {
 .mobile {
   display: none;
 }
-@media (max-width: 800px) {
+
+/* @media (max-width: 1000px) {
+  .section-container .other{
+    display: flex;
+    flex-wrap: wrap;
+  }
+} */
+
+@media (max-width: 750px) {
   .section-container {
     display: flex;
     flex-wrap: wrap;
@@ -92,6 +100,7 @@ p {
 
 .about-photo {
   min-width: 250px;
+  max-height: 250px;
 }
 
 .name {
@@ -103,7 +112,7 @@ p {
   width: 200px;
   object-fit: cover;
   border-radius: 100%;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .skills-container {
@@ -193,6 +202,74 @@ h4 {
   font-size: 1.2em;
   font-weight: bold;
 }
+#more-about h3 {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+#more-about h2 {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+}
+#more-about-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 25px;
+}
+
+.more-about-image-container {
+  /* border-radius: 100%;
+   */
+  display: inline-block;
+  text-align: center;
+  /* border: 1px solid red; */
+  /* padding: 50px; */
+  /* margin: 50px; */
+  width: 500px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.more-about-image-container img {
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.more-about-image-container h3 {
+  margin-bottom: 20px;
+}
+
+.more-about-image-container p {
+  text-align: left;
+  /* padding: 10px; */
+  color: white;
+  /* width: 19vw; */
+}
+
+@media (max-width: 850px) {
+  .more-about-image-container {
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .more-about-image-container {
+    width: 300px;
+  }
+
+  #more-about-container {
+    margin-top: 50px;
+
+    margin: auto;
+  }
+}
 
 .email {
   color: hsla(254, 19%, 14%, 0.815);
@@ -206,7 +283,7 @@ h4 {
   color: hsla(254, 19%, 14%, 0.815);
 }
 .contact {
-  color: hsla(254, 19%, 14%, 0.815);
+  color: hwb(254 11% 84% / 0.815);
   margin-left: 0;
   min-width: 410px;
   text-align: center;
