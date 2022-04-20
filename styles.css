@@ -327,3 +327,7 @@ input::placeholder {
   color: black;
   font-size: 30px;
 }
+
+.carousel-item {
+  height: 73vw;
+}
